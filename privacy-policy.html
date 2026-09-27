@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nilo Privacy Policy</title>
+<meta name="description" content="Nilo runs entirely on your device. No account, no cloud transcription, no analytics.">
+<style>
+  :root {
+    --ink: #1c1a17;
+    --muted: #5b564f;
+    --bg: #faf8f4;
+    --panel: #ffffff;
+    --line: #e6e0d6;
+    --accent: #6a4fe0;
+    --ok: #166534;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #f2efe9;
+      --muted: #b3aca1;
+      --bg: #161513;
+      --panel: #1f1e1b;
+      --line: #35322d;
+      --accent: #a996ff;
+      --ok: #7ddb9b;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 34px; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.02em; }
+  h2 { font-size: 21px; margin: 40px 0 10px; letter-spacing: -0.01em; }
+  h3 { font-size: 17px; margin: 24px 0 6px; }
+  p, li { color: var(--ink); }
+  .meta { color: var(--muted); font-size: 14px; }
+  .lede { font-size: 18px; color: var(--muted); margin: 4px 0 28px; }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin: 22px 0;
+  }
+  .card h2 { margin-top: 0; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  tr:last-child td { border-bottom: none; }
+  a { color: var(--accent); }
+  code { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 1px 5px; font-size: 14px; }
+  .tag { color: var(--ok); font-weight: 600; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  @media print { body { background: #fff; } .card { break-inside: avoid; } }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Nilo Privacy Policy</h1>
+  <p class="meta">Effective date: 2026-09-21 &middot; Last updated: 2026-09-27</p>
+  <p class="lede">
+    Nilo is dictation that runs on your phone. There is no account, no cloud
+    transcription, no analytics and no advertising. Nilo does not upload your speech or text. Text you insert into another app
+    or explicitly export is handled by that destination.
+  </p>
+
+  <div class="card">
+    <h2>The short version</h2>
+    <table>
+      <tr>
+        <th>What</th>
+        <th>Where it stays</th>
+      </tr>
+      <tr>
+        <td>Microphone audio</td>
+        <td>In your phone's memory while you dictate, then discarded. Never uploaded, never written to storage.</td>
+      </tr>
+      <tr>
+        <td>Transcribed text</td>
+        <td>On your device only. Optionally kept in a local history you control.</td>
+      </tr>
+      <tr>
+        <td>Dictionary, snippets, settings</td>
+        <td>On your device only.</td>
+      </tr>
+      <tr>
+        <td>Account, email, contacts, location</td>
+        <td>Nilo never asks for any of these.</td>
+      </tr>
+      <tr>
+        <td>Purchases (if you buy Nilo Pro)</td>
+        <td>Handled by Google Play. We never see your payment details.</td>
+      </tr>
+    </table>
+    <p class="tag">Nilo does not collect or sell personal data.</p>
+  </div>
+
+  <h2>1. Who we are</h2>
+  <p>
+    Nilo is developed and published by KindaSoren ("we", "us"). This policy
+    explains how the Nilo Android application (the "app") handles your
+    information. It applies to the Android app. For any privacy
+    question or request, email <a href="mailto:support@kazman.uk">support@kazman.uk</a>.
+  </p>
+
+  <h2>2. How dictation works, and what happens to your voice</h2>
+  <p>
+    Nilo transcribes speech on your device using the Whisper model and the
+    whisper.cpp engine. The engine is bundled with the app; speech models are downloaded or imported separately. The microphone is open
+    only while you are dictating. Audio is held in memory for the current
+    dictation and then discarded.
+  </p>
+  <ul>
+    <li>Audio is <strong>never transmitted</strong> to us or to any third party.</li>
+    <li>Audio is <strong>never written to storage</strong> by the app.</li>
+    <li>Android shows an ongoing notification while the microphone is active, and you can stop dictation at any time.</li>
+  </ul>
+
+  <h2>3. The Accessibility service</h2>
+  <p>
+    Nilo offers an optional Android Accessibility service that types transcribed
+    text into the field you are already using, so you do not have to switch
+    keyboards. If you enable it, the service:
+  </p>
+  <ul>
+    <li>Reads the currently focused editable field and basic window state, only while dictation is enabled;</li>
+    <li>Uses that information solely to insert the text you dictated;</li>
+    <li><strong>Ignores password fields</strong> and never reads or stores their contents;</li>
+    <li>Never logs, saves to disk or uploads existing field contents. Previous field text may be held temporarily in memory to support Undo;</li>
+    <li>Never clicks buttons or changes settings; it only inserts or restores text when you request it.</li>
+  </ul>
+  <p>
+    You can turn the service off at any time in Android Settings &rarr;
+    Accessibility. If you decline it, Nilo's other insertion methods (the Nilo
+    keyboard and the clipboard) remain available.
+  </p>
+
+  <h2>4. The Nilo keyboard (optional)</h2>
+  <p>
+    Nilo includes an optional Android keyboard (input method). If you enable it
+    and select it as your keyboard, it composes the text you dictate. It does not
+    log keystrokes or upload what you dictate. Dictated text follows the history settings described below, and the keyboard contains no
+    advertising or tracking code. You can switch back to another keyboard at any
+    time.
+  </p>
+
+  <h2>5. Data stored on your device</h2>
+  <h3>Transcript history (optional)</h3>
+  <p>
+    If history is on, the text of your dictations is stored in the app's private
+    storage so you can review, search and export it. History can be turned off
+    in Settings, individual entries can be deleted, and "Clear history" removes
+    all of it. It is never synced and never leaves your device unless you
+    explicitly export it.
+  </p>
+  <h3>Usage statistics</h3>
+  <p>
+    Nilo keeps counts on your device, such as words dictated, speaking pace and
+    day streak. These are numbers only, stored locally, and are not linked to
+    your identity.
+  </p>
+  <h3>Dictionary, snippets, presets and preferences</h3>
+  <p>
+    Everything you add or configure is stored locally. You can export dictionary entries to the clipboard and transcript history to a file location you choose.
+  </p>
+
+  <h2>6. Network access and model downloads</h2>
+  <p>
+    Nilo uses network access to download speech models and communicate with Google Play for prices, purchases and ownership checks, including on startup and resume. Models are downloaded
+    over HTTPS from the public Hugging Face repository. As with any download,
+    Hugging Face receives standard technical request data (such as your IP
+    address) in order to serve the file; their handling is described in the
+    <a href="https://huggingface.co/privacy" rel="noopener">Hugging Face privacy policy</a>.
+    No speech, transcript or usage data is included in these requests. You can
+    avoid downloads entirely by importing a model file from your device.
+  </p>
+
+  <h2>7. Purchases</h2>
+  <p>
+    If you buy a paid feature such as Nilo Pro, the purchase is processed by
+    Google Play under
+    <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>.
+    We receive only a confirmation that a purchase exists, its product
+    identifier and order information needed to grant and restore the feature.
+    We never receive your name, card number, billing address or other payment
+    details. Purchases are tied to your Google account, which is how they can be
+    restored after reinstalling the app or moving to a new phone.
+  </p>
+
+  <h2>8. What Nilo never does</h2>
+  <ul>
+    <li>No account creation, sign-in or profiling.</li>
+    <li>No collection of personal data on our servers &mdash; we do not operate a service that receives it.</li>
+    <li>No analytics, crash-reporting, advertising SDKs or tracking pixels.</li>
+    <li>No selling, renting or sharing of personal data.</li>
+    <li>No advertising.</li>
+    <li>No microphone use while dictation is off.</li>
+  </ul>
+
+  <h2>9. Permissions and why they exist</h2>
+  <table>
+    <tr><th>Permission</th><th>Purpose</th></tr>
+    <tr><td>Microphone</td><td>Hear you while you dictate. Used only during dictation.</td></tr>
+    <tr><td>Display over other apps</td><td>Show the floating dictation pill above your keyboard.</td></tr>
+    <tr><td>Accessibility service</td><td>Optional; insert dictated text into the field you are using.</td></tr>
+    <tr><td>Notifications</td><td>Show the microphone-in-use notification and dictation controls.</td></tr>
+    <tr><td>Internet</td><td>Download speech models and communicate with Google Play for purchases.</td></tr>
+    <tr><td>Vibrate</td><td>Haptic feedback while dictating.</td></tr>
+  </table>
+  <p>
+    Each permission is requested in context, and you can deny any of them and
+    still use the parts of Nilo that do not need it.
+  </p>
+
+  <h2>10. Security</h2>
+  <p>
+    Local data is kept in the app's private storage, protected by Android's app
+    sandbox. Network traffic uses HTTPS. Because we do not run a backend that
+    stores your data, there is no server-side copy of your speech, transcripts
+    or dictionary to breach or to request.
+  </p>
+
+  <h2>11. Retention and deletion</h2>
+  <p>
+    Transcript history retains at most the latest 500 entries. Older entries are removed as new ones arrive. Other saved data remains on your device until you delete it. You can delete
+    individual history entries, clear all history, disable history, remove
+    dictionary entries and snippets, or uninstall the app, which removes all
+    app data from the device. Nilo opts out of Android cloud backup, so none of this data is copied to Google Drive. If you move to a new phone with a direct phone-to-phone transfer, Android may copy it to the new phone.
+    Because there is no account and no server-side
+    storage, there is nothing further for us to delete. If you believe we hold
+    data about you and want it removed, email
+    <a href="mailto:support@kazman.uk">support@kazman.uk</a>.
+  </p>
+
+  <h2>12. Children</h2>
+  <p>
+    Nilo is not directed to children under 13. The app does not collect personal
+    information from anyone, including children.
+  </p>
+
+  <h2>13. Third-party components</h2>
+  <ul>
+    <li>OpenAI Whisper and whisper.cpp are MIT-licensed components executed locally on your device.</li>
+    <li>Google Play Services processes purchases if you buy a paid feature.</li>
+    <li>Hugging Face serves model downloads.</li>
+  </ul>
+
+  <h2>14. Changes to this policy</h2>
+  <p>
+    If this policy changes, the new version will be posted at this URL with a
+    new effective date. Material changes will also be noted in the app's release
+    notes on Google Play.
+  </p>
+
+  <h2>15. Contact</h2>
+  <p>
+    KindaSoren<br>
+    <a href="mailto:support@kazman.uk">support@kazman.uk</a>
+  </p>
+  <p>Please do not send transcripts, payment details or other sensitive information by email.</p>
+
+  <footer>
+    <p>
+      Nilo &middot; This policy is linked from Nilo's Settings.
+    </p>
+  </footer>
+
+</main>
+</body>
+</html>
