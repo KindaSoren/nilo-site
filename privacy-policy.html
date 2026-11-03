@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nilo Privacy Policy</title>
-<meta name="description" content="Nilo runs entirely on your device. No account, no cloud transcription, no analytics.">
+<meta name="description" content="Nilo dictation runs on your device. No account or cloud transcription; model downloads and Google Play receive technical data as described in this policy.">
 <style>
   :root {
     --ink: #1c1a17;
@@ -66,10 +66,12 @@
 <main>
 
   <h1>Nilo Privacy Policy</h1>
-  <p class="meta">Effective date: 2026-09-21 &middot; Last updated: 2026-09-27</p>
+  <p class="meta">Effective date: 2026-10-19 &middot; Last updated: 2026-10-19</p>
   <p class="lede">
-    Nilo is dictation that runs on your phone. There is no account, no cloud
-    transcription, no analytics and no advertising. Nilo does not upload your speech or text. Text you insert into another app
+    Nilo is dictation that runs on your phone. There is no Nilo account, cloud
+    transcription or advertising. Nilo does not upload your speech or text.
+    Model-download providers and Google Play may receive technical request,
+    identifier and diagnostic data as described below. Text you insert into another app
     or explicitly export is handled by that destination.
   </p>
 
@@ -93,15 +95,27 @@
         <td>On your device only.</td>
       </tr>
       <tr>
-        <td>Account, email, contacts, location</td>
-        <td>Nilo never asks for any of these.</td>
+        <td>Account, email, contacts, GPS location</td>
+        <td>Nilo does not request these. Download providers can infer approximate location from your IP address.</td>
+      </tr>
+      <tr>
+        <td>Download requests and technical identifiers</td>
+        <td>Hugging Face and its download hosts receive request metadata, including IP addresses.</td>
+      </tr>
+      <tr>
+        <td>Billing diagnostics and session identifiers</td>
+        <td>Sent to Google by the Play Billing library, including when purchase UI is disabled.</td>
       </tr>
       <tr>
         <td>Purchases (if you buy Nilo Pro)</td>
         <td>Handled by Google Play. We never see your payment details.</td>
       </tr>
+      <tr>
+        <td>Feedback you send</td>
+        <td>Only if you choose to email it. Your email app sends it; you see everything in it first.</td>
+      </tr>
     </table>
-    <p class="tag">Nilo does not collect or sell personal data.</p>
+    <p class="tag">Your speech and transcripts stay on your device. We do not sell personal data. Third-party technical data handling is described in section 6.</p>
   </div>
 
   <h2>1. Who we are</h2>
@@ -175,13 +189,38 @@
 
   <h2>6. Network access and model downloads</h2>
   <p>
-    Nilo uses network access to download speech models and communicate with Google Play for prices, purchases and ownership checks, including on startup and resume. Models are downloaded
-    over HTTPS from the public Hugging Face repository. As with any download,
-    Hugging Face receives standard technical request data (such as your IP
-    address) in order to serve the file; their handling is described in the
+    Models are downloaded over HTTPS from Hugging Face and its download hosts.
+    These providers receive IP addresses, request times, requested model paths
+    and technical headers. Hugging Face documents approximate country/region
+    information and hashed IP addresses in download analytics, and uses IP
+    addresses for rate limiting. This metadata supports delivery, analytics
+    and platform security under the
     <a href="https://huggingface.co/privacy" rel="noopener">Hugging Face privacy policy</a>.
-    No speech, transcript or usage data is included in these requests. You can
-    avoid downloads entirely by importing a model file from your device.
+    Model requests contain no audio, transcripts, dictionary, snippets or local
+    dictation statistics. You can avoid this download flow by importing a model
+    file from your device.
+  </p>
+  <p>
+    Nilo also communicates with Google Play for prices, purchases and ownership
+    checks on startup and resume, even when the Pro purchase UI is disabled.
+    The Play Billing library sends diagnostic events and client-session
+    identifiers to Google, with information such as response/error codes,
+    SDK/app version and device/network context. These events support diagnostics
+    and service improvement under
+    <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>.
+    The current app has no switch to disable Billing's diagnostic path. These
+    transfers use encrypted connections and do not include your dictated audio or text.
+  </p>
+  <p>
+    <strong>Feedback you send.</strong> &ldquo;Send feedback&rdquo; in Settings and
+    &ldquo;Report&rdquo; on a transcript open an email to
+    <a href="mailto:support@kazman.uk">support@kazman.uk</a> in your own email
+    app; Nilo does not send anything itself. The draft contains the app version,
+    speech model, language, insertion method, Android version and device model,
+    and for a report the text of that transcript and the app it went to. You can
+    read, edit or delete any of it, or not send it at all. If you send it, we
+    receive your email address and what you wrote, use them only to reply and to
+    fix problems, and delete them on request.
   </p>
 
   <h2>7. Purchases</h2>
@@ -198,10 +237,10 @@
 
   <h2>8. What Nilo never does</h2>
   <ul>
-    <li>No account creation, sign-in or profiling.</li>
+    <li>No Nilo account creation or sign-in.</li>
     <li>No collection of personal data on our servers &mdash; we do not operate a service that receives it.</li>
-    <li>No analytics, crash-reporting, advertising SDKs or tracking pixels.</li>
-    <li>No selling, renting or sharing of personal data.</li>
+    <li>No advertising SDKs or tracking pixels. Provider download analytics and Billing diagnostics are described above.</li>
+    <li>No selling or renting of personal data. Technical data is transferred to the providers described in section 6; user-requested insertion, export and feedback emails transfer text to the destination you choose.</li>
     <li>No advertising.</li>
     <li>No microphone use while dictation is off.</li>
   </ul>
@@ -241,17 +280,27 @@
     <a href="mailto:support@kazman.uk">support@kazman.uk</a>.
   </p>
 
+  <p>
+    Clearing local data does not delete provider-held download logs or Billing
+    diagnostics. Those providers set their retention periods and handle
+    applicable access/deletion requests under their own policies; we do not
+    control or promise deletion of their records. For Hugging Face privacy
+    requests, contact <a href="mailto:privacy@huggingface.co">privacy@huggingface.co</a>.
+    Google provides <a href="https://myaccount.google.com/data-and-privacy" rel="noopener">privacy controls</a>.
+  </p>
+
   <h2>12. Children</h2>
   <p>
-    Nilo is not directed to children under 13. The app does not collect personal
-    information from anyone, including children.
+    Nilo is not directed to children under 13. Audio and transcripts are
+    processed locally for all users; technical provider data handling is
+    described in section 6.
   </p>
 
   <h2>13. Third-party components</h2>
   <ul>
     <li>OpenAI Whisper and whisper.cpp are MIT-licensed components executed locally on your device.</li>
-    <li>Google Play Services processes purchases if you buy a paid feature.</li>
-    <li>Hugging Face serves model downloads.</li>
+    <li>Google Play handles purchases and ownership checks; its Billing library also sends diagnostics and session identifiers.</li>
+    <li>Hugging Face and its download hosts serve models and process technical request metadata.</li>
   </ul>
 
   <h2>14. Changes to this policy</h2>
