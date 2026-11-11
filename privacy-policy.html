@@ -66,7 +66,7 @@
 <main>
 
   <h1>Nilo Privacy Policy</h1>
-  <p class="meta">Effective date: 2026-10-19 &middot; Last updated: 2026-10-19</p>
+  <p class="meta">Effective date: 2026-11-11 &middot; Last updated: 2026-11-11</p>
   <p class="lede">
     Nilo is dictation that runs on your phone. There is no Nilo account, cloud
     transcription or advertising. Nilo does not upload your speech or text.
@@ -84,7 +84,7 @@
       </tr>
       <tr>
         <td>Microphone audio</td>
-        <td>In your phone's memory while you dictate, then discarded. Never uploaded, never written to storage.</td>
+        <td>In your phone's memory while you dictate or use Listen to speaker audio, then discarded. Never uploaded, never written to storage.</td>
       </tr>
       <tr>
         <td>Transcribed text</td>
@@ -130,13 +130,30 @@
   <p>
     Nilo transcribes speech on your device using the Whisper model and the
     whisper.cpp engine. The engine is bundled with the app; speech models are downloaded or imported separately. The microphone is open
-    only while you are dictating. Audio is held in memory for the current
-    dictation and then discarded.
+    only while you are dictating or while a Listen to speaker audio session
+    you started is running. Audio is held in memory for the current session
+    and then discarded.
   </p>
   <ul>
     <li>Audio is <strong>never transmitted</strong> to us or to any third party.</li>
     <li>Audio is <strong>never written to storage</strong> by the app.</li>
     <li>Android shows an ongoing notification while the microphone is active, and you can stop dictation at any time.</li>
+  </ul>
+
+  <h3>Listen to speaker audio</h3>
+  <p>
+    &ldquo;Listen to speaker audio&rdquo; transcribes a message that another app,
+    such as WhatsApp, plays through your phone's speaker. You start it from
+    Nilo's Home screen or from Nilo's notification. Nilo records what the
+    microphone hears, so it captures the voice of whoever is speaking in that
+    message as well as any nearby sound. It does not read other apps' audio
+    internally, and it does not work with headphones.
+  </p>
+  <ul>
+    <li>A session lasts at most two minutes and ends when you tap Done or cancel it.</li>
+    <li>The audio is handled exactly like dictation: transcribed on your device, kept only in memory, never written to storage and never uploaded.</li>
+    <li>The transcript is not typed into any app or copied to the clipboard until you choose Copy or Paste. If history is on, it is saved to your local history like a dictation.</li>
+    <li>Only transcribe audio you have the right to transcribe. The person speaking in the message is not notified by Nilo.</li>
   </ul>
 
   <h2>3. The Accessibility service</h2>
@@ -248,7 +265,7 @@
   <h2>9. Permissions and why they exist</h2>
   <table>
     <tr><th>Permission</th><th>Purpose</th></tr>
-    <tr><td>Microphone</td><td>Hear you while you dictate. Used only during dictation.</td></tr>
+    <tr><td>Microphone</td><td>Hear you while you dictate, and hear speaker audio you choose to transcribe. Used only during those sessions.</td></tr>
     <tr><td>Display over other apps</td><td>Show the floating dictation pill above your keyboard.</td></tr>
     <tr><td>Accessibility service</td><td>Optional; insert dictated text into the field you are using.</td></tr>
     <tr><td>Notifications</td><td>Show the microphone-in-use notification and dictation controls.</td></tr>
